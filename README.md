@@ -21,10 +21,6 @@ A simple Rock Paper Scissors game built using HTML, CSS, and JavaScript.
 <img width="781" height="658" alt="image" src="https://github.com/user-attachments/assets/222fefae-42ea-4785-88ff-c9bbe4b13056" />
 
 
-## Live Demo
-
-https://shravani-codes123.github.io/rock-paper-scissors
-
 ## How to Run
 
 1. Clone the repository:
