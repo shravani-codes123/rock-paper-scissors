@@ -3,7 +3,21 @@
                 ties : 0 ,
                 losses : 0
         };
-           
+
+        let autoplayMode = false;
+        let intervalID;
+            function autoplay(){
+                if(!autoplayMode){
+                     intervalID = setInterval(function(){
+                        const playerMove = pickComputerMove();
+                        playGame(playerMove);
+                    },1000);
+                    autoplayMode = true;
+                }else{// add itervalid...
+                    clearInterval(intervalID);
+                    autoplayMode = false;
+                }
+            }
 
             /*default operator || will check the condition then excute the code*/
             /*when no score is calulated give them defualt score */
@@ -56,8 +70,7 @@
          computer`;
                 updateScoreElement();
 
-                alert(`You picked ${playerMove}. Computer picked ${computerMove}. You ${result}
-                wins : ${score.wins} , losses : ${score.losses} , ties : ${score.ties}`);
+              
 
             
             }

@@ -35,3 +35,10 @@ body{
                 cursor: pointer;
 
             }
+            .auto-play-btn{
+                padding: 8px 15px;
+                border: none;
+                font-size: 15px;
+                cursor: pointer;
+
+            }
